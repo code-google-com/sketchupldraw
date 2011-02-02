@@ -208,6 +208,7 @@ module LDraw
 	unless file_loaded?(scriptName)
 		pluginsMenu = UI.menu("Plugins")
 		pluginsMenu.add_item("Export to LDraw…") {LDraw.export()}
+		file_loaded(scriptName)
 	end
 
 end
